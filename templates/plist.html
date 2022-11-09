@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+    <h1>Product List Page</h1>
+    {% for p in all_ps_list %}
+    <h3><a href="{% url 'p_detail' p.pk %}">{{ p.name }}</a></h3>
+    {% endfor %}
+
+    <h2><a href="{% url 'p_new' %}">+New Product</a></h2>
+</body>
+</html>

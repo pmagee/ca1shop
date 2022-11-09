@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Detail</title>
+</head>
+<body>
+    <h1>Product Details Page</h1>
+    <p>Name: {{ product.name }}</p>
+    <p>Expiry Date: {{ product.exp_date }}</p>
+
+    <p><a href="{% url 'p_edit' product.pk %}">+ Edit Product Record</a></p>
+    
+</body>
+</html>
